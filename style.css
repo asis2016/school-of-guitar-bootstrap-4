@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   background-color: #efefef;
   font-family: 'Barlow', sans-serif; }
@@ -25,10 +28,8 @@ a, a:hover {
   color: #395758; }
 
 .header {
+  position: relative;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: url("assets/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,10 +39,23 @@ a, a:hover {
     background: black;
     height: 100%;
     width: 100%;
-    opacity: 30%;
+    opacity: 35%;
     z-index: 1; }
+  .header .nav {
+    z-index: 2;
+    position: relative; }
+    .header .nav .nav-link {
+      font-size: 30px;
+      color: #fff; }
+      .header .nav .nav-link:hover {
+        text-decoration: underline; }
   .header .inner {
-    z-index: 2; }
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: inherit; }
     .header .inner .content {
       text-align: center;
       color: #fff; }
@@ -63,50 +77,50 @@ a, a:hover {
         .header .inner .content .btn:hover {
           background-color: #825431; }
 
-.two {
+#about-us {
   margin: 10px 0 100px 0;
   height: 100vh;
   display: flex;
   align-items: center; }
-  .two .content {
+  #about-us .content {
     display: flex;
     align-items: center; }
-    .two .content div {
+    #about-us .content div {
       padding: 0 60px; }
 
-.three {
+#tour {
   margin: 100px 0;
   height: 100vh;
   display: flex;
   align-items: center; }
-  .three .content {
+  #tour .content {
     padding-left: 70px;
     padding-bottom: 25px; }
-  .three .concert-one {
+  #tour .concert-one {
     background: url("assets/3-1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 500px;
     width: 100%; }
-  .three .concert-two {
+  #tour .concert-two {
     background: url("assets/3-2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 500px;
     width: 100%; }
-  .three .concert-three {
+  #tour .concert-three {
     background: url("assets/3-3.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 500px;
     width: 100%; }
-  .three .concert-info {
+  #tour .concert-info {
     background: #cd864e;
     height: 70px;
-    font-size: 32px;
+    font-size: 30px;
     color: white;
     width: 50%;
     position: absolute;
@@ -115,40 +129,40 @@ a, a:hover {
     justify-content: center;
     align-items: center; }
 
-.four {
+#blog {
   margin: 100px 0;
   height: 100vh;
   display: flex;
   align-items: center; }
-  .four .title {
+  #blog .title {
     padding-left: 70px;
     padding-bottom: 50px; }
-  .four .card .card-img-top {
+  #blog .card .card-img-top {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
-  .four .card a {
+  #blog .card a {
     color: #cd864e;
     font-size: 30px;
     font-weight: bold; }
 
-.five .bg {
+#footer .bg {
   height: 430px;
   background: url("assets/footer-bg.png");
   background-repeat: no-repeat;
   background-size: cover; }
-.five .case {
+#footer .case {
   margin: 50px 0; }
-  .five .case .contact-info {
+  #footer .case .contact-info {
     display: flex;
     align-items: center;
     justify-content: center; }
-    .five .case .contact-info .contact {
+    #footer .case .contact-info .contact {
       display: inherit;
       align-items: inherit;
       justify-content: inherit; }
-      .five .case .contact-info .contact div {
+      #footer .case .contact-info .contact div {
         padding-left: 30px; }
-        .five .case .contact-info .contact div h4 {
+        #footer .case .contact-info .contact div h4 {
           font-size: 24px; }
 
 /*# sourceMappingURL=style.css.map */
