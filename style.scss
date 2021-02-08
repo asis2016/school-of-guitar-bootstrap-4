@@ -1,18 +1,79 @@
 
 
+
+
+$secondary_fs: 22px;
+$secondary_fw: 700;
+$secondary_color: #000; 
+
+body{
+    background-color: rgb(239, 239, 239);
+}
+
+h2{
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(57, 87, 88);
+    text-decoration: none;
+    line-height: 1.2;
+    font-family: "YALBs4gwU0s 0", _fb_, auto;
+    font-size: 46px;
+    text-transform: none;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 0.004em;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.two{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .content{
+        display: flex;
+        align-items: center;
+    }
+}
+
 .three{
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
     .concert{
         &-one{
-            background: url('assets/3-2.png');
+            background: url('https://via.placeholder.com/500x500');
             background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            width: 100%;
+
         }
 
         &-two{
-            
+            background: url('https://via.placeholder.com/500x500');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            width: 100%;
         }
 
         &-three{
-            
+            background: url('https://via.placeholder.com/500x500');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            width: 100%;
         }
     }
 }
