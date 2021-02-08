@@ -38,6 +38,18 @@ a, a:hover{
     color: $secondary_color;
 }
 
+.goto-menu{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+    img{
+        height: 20px;
+    }
+}
+
 // Section1: Header
 .header{
     position: relative;
@@ -109,6 +121,7 @@ a, a:hover{
 
 // Section 2: About us
 #about-us{
+    position: relative;
     margin: 10px 0 100px 0;
     height: 100vh;
     display: flex;
@@ -126,6 +139,7 @@ a, a:hover{
 
 // Section 3: Tour
 #tour{
+    position: relative;
     margin: 100px 0;
     height: 100vh;
     display: flex;
@@ -182,9 +196,9 @@ a, a:hover{
     }
 }
 
-
 // Section 4: blog
 #blog{
+    position: relative;
     margin: 100px 0;
     height: 100vh;
     display: flex;
@@ -211,6 +225,7 @@ a, a:hover{
 
 // Section 5: footer
 #footer{
+    position: relative;
     .bg{
         height: 430px;
         background: url('assets/footer-bg.png') no-repeat;
@@ -218,10 +233,14 @@ a, a:hover{
     }
 
     .case{
-        margin: 50px 0;
+        margin: 50px 0 25px 0;
 
         .title{
             line-height: 1;
+        }
+
+        .copyright{
+            font-size: 16px;
         }
 
         .contact-info{
