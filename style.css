@@ -1,23 +1,20 @@
 body {
-  background-color: #efefef; }
+  background-color: #efefef;
+  font-family: 'Barlow', sans-serif; }
 
 h2 {
-  font-weight: 400;
-  font-style: normal;
   color: #395758;
   text-decoration: none;
   line-height: 1.2;
-  font-family: "YALBs4gwU0s 0", _fb_, auto;
   font-size: 46px;
-  text-transform: none; }
+  font-weight: 700; }
 
 p {
   color: black;
   text-decoration: none;
   letter-spacing: 0.004em;
   font-size: 22px;
-  font-style: normal;
-  font-weight: 700; }
+  font-weight: 200; }
 
 .two {
   height: 100vh;
@@ -26,6 +23,8 @@ p {
   .two .content {
     display: flex;
     align-items: center; }
+    .two .content div {
+      padding: 0 60px; }
 
 .three {
   height: 100vh;
@@ -52,5 +51,10 @@ p {
     background-position: center;
     height: 500px;
     width: 100%; }
+
+.four {
+  height: 100vh;
+  display: flex;
+  align-items: center; }
 
 /*# sourceMappingURL=style.css.map */

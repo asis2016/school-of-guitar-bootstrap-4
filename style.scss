@@ -8,17 +8,17 @@ $secondary_color: #000;
 
 body{
     background-color: rgb(239, 239, 239);
+    font-family: 'Barlow', sans-serif;
 }
 
+
+
 h2{
-    font-weight: 400;
-    font-style: normal;
     color: rgb(57, 87, 88);
     text-decoration: none;
     line-height: 1.2;
-    font-family: "YALBs4gwU0s 0", _fb_, auto;
     font-size: 46px;
-    text-transform: none;
+    font-weight: 700;
 }
 
 p{
@@ -26,10 +26,11 @@ p{
     text-decoration: none;
     letter-spacing: 0.004em;
     font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
+    font-weight: 200;
 }
 
+
+// Section Two
 .two{
     height: 100vh;
     display: flex;
@@ -38,6 +39,10 @@ p{
     .content{
         display: flex;
         align-items: center;
+
+        div{
+            padding: 0 60px;
+        }
     }
 }
 
@@ -76,4 +81,10 @@ p{
             width: 100%;
         }
     }
+}
+
+.four{
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
