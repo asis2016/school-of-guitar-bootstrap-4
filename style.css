@@ -5,16 +5,16 @@ body {
   background-color: #efefef;
   font-family: 'Barlow', sans-serif; }
 
+h2, h3, h4 {
+  line-height: 1.2;
+  font-weight: 700; }
+
 h2 {
   color: #395758;
   text-decoration: none;
-  line-height: 1.2;
-  font-size: 46px;
-  font-weight: 700; }
+  font-size: 46px; }
 
 h3, h4 {
-  line-height: 1.2;
-  font-weight: 700;
   color: #cd864e; }
 
 p {
@@ -22,7 +22,7 @@ p {
   text-decoration: none;
   letter-spacing: 0.004em;
   font-size: 22px;
-  font-weight: 200; }
+  font-weight: 300; }
 
 a, a:hover {
   color: #395758; }
@@ -30,8 +30,7 @@ a, a:hover {
 .header {
   position: relative;
   height: 100vh;
-  background: url("assets/bg.jpg");
-  background-repeat: no-repeat;
+  background: url("assets/bg.jpg") no-repeat;
   background-size: cover;
   background-position: center; }
   .header-opac {
@@ -48,7 +47,7 @@ a, a:hover {
       font-size: 30px;
       color: #fff; }
       .header .nav .nav-link:hover {
-        text-decoration: underline; }
+        font-weight: 700; }
   .header .inner {
     z-index: 2;
     display: flex;
@@ -59,12 +58,12 @@ a, a:hover {
     .header .inner .content {
       text-align: center;
       color: #fff; }
-      .header .inner .content p {
+      .header .inner .content .subtitle {
         font-size: 50px;
         text-transform: uppercase;
         color: #fff;
         margin-bottom: 0; }
-      .header .inner .content h1 {
+      .header .inner .content .title {
         font-size: 70px;
         font-weight: 700;
         margin-bottom: 25px; }
@@ -86,7 +85,7 @@ a, a:hover {
     display: flex;
     align-items: center; }
     #about-us .content div {
-      padding: 0 60px; }
+      padding: 0 50px; }
 
 #tour {
   margin: 100px 0;
@@ -97,25 +96,22 @@ a, a:hover {
     padding-left: 70px;
     padding-bottom: 25px; }
   #tour .concert-one {
-    background: url("assets/3-1.png");
-    background-repeat: no-repeat;
+    background: url("assets/3-1.png") no-repeat;
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 400px;
     width: 100%; }
   #tour .concert-two {
-    background: url("assets/3-2.png");
-    background-repeat: no-repeat;
+    background: url("assets/3-2.png") no-repeat;
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 400px;
     width: 100%; }
   #tour .concert-three {
-    background: url("assets/3-3.png");
-    background-repeat: no-repeat;
+    background: url("assets/3-3.png") no-repeat;
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 400px;
     width: 100%; }
   #tour .concert-info {
     background: #cd864e;
@@ -127,7 +123,11 @@ a, a:hover {
     bottom: 0;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    text-decoration: none; }
+    #tour .concert-info:hover {
+      text-decoration: none;
+      background-color: #825431; }
 
 #blog {
   margin: 100px 0;
@@ -143,15 +143,16 @@ a, a:hover {
   #blog .card a {
     color: #cd864e;
     font-size: 30px;
-    font-weight: bold; }
+    font-weight: 700; }
 
 #footer .bg {
   height: 430px;
-  background: url("assets/footer-bg.png");
-  background-repeat: no-repeat;
+  background: url("assets/footer-bg.png") no-repeat;
   background-size: cover; }
 #footer .case {
   margin: 50px 0; }
+  #footer .case .title {
+    line-height: 1; }
   #footer .case .contact-info {
     display: flex;
     align-items: center;

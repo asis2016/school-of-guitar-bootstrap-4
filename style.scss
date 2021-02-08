@@ -1,8 +1,6 @@
 $primary_color: #cd864e;
 $primary_color_hover: #825431;
-$secondary_fs: 22px;
-$secondary_fw: 700;
-$secondary_color: #000; 
+$secondary_color: rgb(57, 87, 88);
 
 html{
     scroll-behavior: smooth;
@@ -13,17 +11,18 @@ body{
     font-family: 'Barlow', sans-serif;
 }
 
-h2{
-    color: rgb(57, 87, 88);
-    text-decoration: none;
+h2, h3, h4 {
     line-height: 1.2;
-    font-size: 46px;
     font-weight: 700;
 }
 
+h2{
+    color: $secondary_color;
+    text-decoration: none;
+    font-size: 46px;
+}
+
 h3, h4{
-    line-height: 1.2;
-    font-weight: 700;
     color: $primary_color;
 }
 
@@ -32,19 +31,18 @@ p{
     text-decoration: none;
     letter-spacing: 0.004em;
     font-size: 22px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 a, a:hover{
-    color: rgb(57, 87, 88);
+    color: $secondary_color;
 }
 
 // Section1: Header
 .header{
     position: relative;
     height: 100vh;
-    background: url('assets/bg.jpg');
-    background-repeat: no-repeat;
+    background: url('assets/bg.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 
@@ -64,7 +62,7 @@ a, a:hover{
             font-size: 30px;
             color: #fff;
             &:hover{
-                text-decoration: underline;
+                font-weight: 700;
             }
         }
     }
@@ -81,14 +79,14 @@ a, a:hover{
             text-align: center;
             color: #fff;
     
-            p{
+            .subtitle{
                 font-size: 50px;
                 text-transform: uppercase;
                 color: #fff;
                 margin-bottom: 0;
             }
 
-            h1{
+            .title{
                 font-size: 70px;
                 font-weight: 700;
                 margin-bottom: 25px;
@@ -106,8 +104,6 @@ a, a:hover{
             }
         }
     }
-
-    
 }
 
 
@@ -123,7 +119,7 @@ a, a:hover{
         align-items: center;
 
         div{
-            padding: 0 60px;
+            padding: 0 50px;
         }
     }
 }
@@ -142,35 +138,32 @@ a, a:hover{
 
     .concert{
         &-one{
-            background: url('assets/3-1.png');
-            background-repeat: no-repeat;
+            background: url('assets/3-1.png') no-repeat; 
             background-size: cover;
             background-position: center;
-            height: 500px;
+            height: 400px;
             width: 100%;
 
         }
 
         &-two{
-            background: url('assets/3-2.png');
-            background-repeat: no-repeat;
+            background: url('assets/3-2.png') no-repeat;
             background-size: cover;
             background-position: center;
-            height: 500px;
+            height: 400px;
             width: 100%;
         }
 
         &-three{
-            background: url('assets/3-3.png');
-            background-repeat: no-repeat;
+            background: url('assets/3-3.png') no-repeat;
             background-size: cover;
             background-position: center;
-            height: 500px;
+            height: 400px;
             width: 100%;
         }
 
         &-info{
-            background: #cd864e;
+            background: $primary_color;
             height: 70px;
             font-size: 30px;
             color: white;
@@ -180,6 +173,11 @@ a, a:hover{
             display: flex;
             justify-content: center;
             align-items: center;
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+                background-color: $primary_color_hover;
+            }
         }
     }
 }
@@ -204,26 +202,27 @@ a, a:hover{
         }
 
         a{
-            color: #cd864e;
+            color: $primary_color;
             font-size: 30px;
-            font-weight: bold;
+            font-weight: 700;
         }
-
     }
-    
 }
 
 // Section 5: footer
 #footer{
     .bg{
         height: 430px;
-        background: url('assets/footer-bg.png');
-        background-repeat: no-repeat;
+        background: url('assets/footer-bg.png') no-repeat;
         background-size: cover;
     }
 
     .case{
         margin: 50px 0;
+
+        .title{
+            line-height: 1;
+        }
 
         .contact-info{
             display: flex;
