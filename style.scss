@@ -32,6 +32,7 @@ p{
 
 // Section Two
 .two{
+    margin: 100px 0;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -47,14 +48,19 @@ p{
 }
 
 .three{
-
+    margin: 100px 0;
     height: 100vh;
     display: flex;
     align-items: center;
 
+    .content{
+        padding-left: 70px;
+        padding-bottom: 25px;
+    }
+
     .concert{
         &-one{
-            background: url('https://via.placeholder.com/500x500');
+            background: url('assets/3-1.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -64,7 +70,7 @@ p{
         }
 
         &-two{
-            background: url('https://via.placeholder.com/500x500');
+            background: url('assets/3-2.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -73,17 +79,31 @@ p{
         }
 
         &-three{
-            background: url('https://via.placeholder.com/500x500');
+            background: url('assets/3-3.png');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             height: 500px;
             width: 100%;
         }
+
+        &-info{
+            background: #cd864e;
+            height: 70px;
+            font-size: 32px;
+            color: white;
+            width: 50%;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 
 .four{
+    margin: 100px 0;
     height: 100vh;
     display: flex;
     align-items: center;
