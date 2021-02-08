@@ -1,3 +1,5 @@
+$primary_color: #cd864e;
+$primary_color_hover: #825431;
 $secondary_fs: 22px;
 $secondary_fw: 700;
 $secondary_color: #000; 
@@ -13,6 +15,12 @@ h2{
     line-height: 1.2;
     font-size: 46px;
     font-weight: 700;
+}
+
+h3, h4{
+    line-height: 1.2;
+    font-weight: 700;
+    color: $primary_color;
 }
 
 p{
@@ -69,8 +77,13 @@ a, a:hover{
 
             .btn{
                 border-radius: 0;
-                background-color: #cd864e;
+                background-color: $primary_color;
+                color: #fff;
                 font-size: 30px;
+                width: 250px;
+                &:hover{
+                    background-color: $primary_color_hover;
+                }
             }
         }
     }
@@ -81,7 +94,7 @@ a, a:hover{
 
 // Section Two
 .two{
-    margin: 100px 0;
+    margin: 10px 0 100px 0;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -169,12 +182,48 @@ a, a:hover{
             border-top-left-radius:0;
             border-top-right-radius:0;
         }
-        h3{
+
+        a{
             color: #cd864e;
+            font-size: 30px;
             font-weight: bold;
         }
+
     }
     
 }
 
 // Section five
+.five{
+    .bg{
+        height: 430px;
+        background: url('assets/footer-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .case{
+        margin: 50px 0;
+
+        .contact-info{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            .contact{
+                display: inherit;
+                align-items: inherit;
+                justify-content: inherit;
+                div{
+                    padding-left: 30px;
+                    h4{
+                        font-size: 24px;
+                    }
+                }
+            }
+    
+        }
+    }
+
+    
+}

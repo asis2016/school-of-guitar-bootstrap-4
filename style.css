@@ -9,6 +9,11 @@ h2 {
   font-size: 46px;
   font-weight: 700; }
 
+h3, h4 {
+  line-height: 1.2;
+  font-weight: 700;
+  color: #cd864e; }
+
 p {
   color: black;
   text-decoration: none;
@@ -52,10 +57,14 @@ a, a:hover {
       .header .inner .content .btn {
         border-radius: 0;
         background-color: #cd864e;
-        font-size: 30px; }
+        color: #fff;
+        font-size: 30px;
+        width: 250px; }
+        .header .inner .content .btn:hover {
+          background-color: #825431; }
 
 .two {
-  margin: 100px 0;
+  margin: 10px 0 100px 0;
   height: 100vh;
   display: flex;
   align-items: center; }
@@ -117,8 +126,29 @@ a, a:hover {
   .four .card .card-img-top {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
-  .four .card h3 {
+  .four .card a {
     color: #cd864e;
+    font-size: 30px;
     font-weight: bold; }
+
+.five .bg {
+  height: 430px;
+  background: url("assets/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+.five .case {
+  margin: 50px 0; }
+  .five .case .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .five .case .contact-info .contact {
+      display: inherit;
+      align-items: inherit;
+      justify-content: inherit; }
+      .five .case .contact-info .contact div {
+        padding-left: 30px; }
+        .five .case .contact-info .contact div h4 {
+          font-size: 24px; }
 
 /*# sourceMappingURL=style.css.map */
