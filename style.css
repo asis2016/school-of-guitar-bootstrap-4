@@ -16,6 +16,44 @@ p {
   font-size: 22px;
   font-weight: 200; }
 
+a, a:hover {
+  color: #395758; }
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .header-opac {
+    position: absolute;
+    background: black;
+    height: 100%;
+    width: 100%;
+    opacity: 30%;
+    z-index: 1; }
+  .header .inner {
+    z-index: 2; }
+    .header .inner .content {
+      text-align: center;
+      color: #fff; }
+      .header .inner .content p {
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 0; }
+      .header .inner .content h1 {
+        font-size: 70px;
+        font-weight: 700;
+        margin-bottom: 25px; }
+      .header .inner .content .btn {
+        border-radius: 0;
+        background-color: #cd864e;
+        font-size: 30px; }
+
 .two {
   margin: 100px 0;
   height: 100vh;
@@ -73,5 +111,14 @@ p {
   height: 100vh;
   display: flex;
   align-items: center; }
+  .four .title {
+    padding-left: 70px;
+    padding-bottom: 50px; }
+  .four .card .card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .four .card h3 {
+    color: #cd864e;
+    font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
