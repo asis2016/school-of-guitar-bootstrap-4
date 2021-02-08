@@ -51,9 +51,8 @@ a, a:hover{
 }
 
 // Section1: Header
-.header{
+#header{
     position: relative;
-    height: 100vh;
     background: url('assets/bg.jpg') no-repeat;
     background-size: cover;
     background-position: center;
@@ -123,7 +122,6 @@ a, a:hover{
 #about-us{
     position: relative;
     margin: 10px 0 100px 0;
-    height: 100vh;
     display: flex;
     align-items: center;
 
@@ -141,7 +139,6 @@ a, a:hover{
 #tour{
     position: relative;
     margin: 100px 0;
-    height: 100vh;
     display: flex;
     align-items: center;
 
@@ -200,7 +197,6 @@ a, a:hover{
 #blog{
     position: relative;
     margin: 100px 0;
-    height: 100vh;
     display: flex;
     align-items: center;
 
@@ -262,6 +258,24 @@ a, a:hover{
     
         }
     }
+}
 
-    
+@media screen and (max-width: 767px){
+    #blog{
+        .card{
+            margin: 25px 0;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    #header, #about-us, #tour, #blog{
+        height: 100vh;
+    }
+}
+
+
+@media screen and (min-width: 1199px){
+    #header{
+    }
 }
