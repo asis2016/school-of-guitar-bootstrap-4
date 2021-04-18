@@ -1,0 +1,243 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #efefef;
+  font-family: "Barlow", sans-serif;
+}
+
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h2 {
+  color: #395758;
+  text-decoration: none;
+  font-size: 46px;
+}
+
+h3,
+h4 {
+  color: #cd864e;
+}
+
+p {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.004em;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+a,
+a:hover {
+  color: #395758;
+}
+
+.goto-menu {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+}
+.goto-menu img {
+  height: 20px;
+}
+
+#header {
+  position: relative;
+  background: url("../../assets/images/bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#header-opac {
+  position: absolute;
+  background: black;
+  height: 100%;
+  width: 100%;
+  opacity: 35%;
+  z-index: 1;
+}
+#header .nav {
+  z-index: 2;
+  position: relative;
+}
+#header .nav .nav-link {
+  font-size: 30px;
+  color: #fff;
+}
+#header .nav .nav-link:hover {
+  font-weight: 700;
+}
+#header .inner {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: inherit;
+}
+#header .inner .content {
+  text-align: center;
+  color: #fff;
+}
+#header .inner .content .subtitle {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0;
+}
+#header .inner .content .title {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+#header .inner .content .btn {
+  border-radius: 0;
+  background-color: #cd864e;
+  color: #fff;
+  font-size: 30px;
+  width: 250px;
+}
+#header .inner .content .btn:hover {
+  background-color: #825431;
+}
+
+#about-us {
+  position: relative;
+  margin: 10px 0 100px 0;
+  display: flex;
+  align-items: center;
+}
+#about-us .content {
+  display: flex;
+  align-items: center;
+}
+#about-us .content div {
+  padding: 0 50px;
+}
+
+#tour {
+  position: relative;
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+}
+#tour .content {
+  padding-left: 70px;
+  padding-bottom: 25px;
+}
+#tour .concert-one {
+  background: url("../../assets/images/3-1.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+}
+#tour .concert-two {
+  background: url("../../assets/images/3-2.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+}
+#tour .concert-three {
+  background: url("../../assets/images/3-3.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+}
+#tour .concert-info {
+  background: #cd864e;
+  height: 70px;
+  font-size: 30px;
+  color: white;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+#tour .concert-info:hover {
+  text-decoration: none;
+  background-color: #825431;
+}
+
+#blog {
+  position: relative;
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+}
+#blog .title {
+  padding-left: 70px;
+  padding-bottom: 50px;
+}
+#blog .card .card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+#blog .card a {
+  color: #cd864e;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#footer {
+  position: relative;
+}
+#footer .bg {
+  height: 430px;
+  background: url("../../assets/images/footer-bg.png") no-repeat;
+  background-size: cover;
+}
+#footer .case {
+  margin: 50px 0 25px 0;
+}
+#footer .case .title {
+  line-height: 1;
+}
+#footer .case .copyright {
+  font-size: 16px;
+}
+#footer .case .contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer .case .contact-info .contact {
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+#footer .case .contact-info .contact div {
+  padding-left: 30px;
+}
+#footer .case .contact-info .contact div h4 {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  #blog .card {
+    margin: 25px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  #header,
+#about-us,
+#tour,
+#blog {
+    height: 100vh;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
